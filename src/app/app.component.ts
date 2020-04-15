@@ -6,10 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  num1 = '';
-  num2 = '';
-  SubmitBtn(){
-    num1 = this.a;
+  num1 = 0;
+  num2 = 0;
+  hasil = 0;
 
+  SubmitBtn(){ 
+    this.hasil = Math.pow(this.num1, this.num2);
   }
+
+  ClearBtn(){
+    this.num1=0;
+    this.num2=0;
+    this.hasil=0;
+  }
+
+  
 }

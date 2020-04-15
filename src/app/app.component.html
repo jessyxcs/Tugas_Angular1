@@ -4,18 +4,23 @@
 
 <div>
   <label> Number a : </label>
-  <input [(ngModel)]="a" type="text">
+  <input [(ngModel)]="num1" type="text">
 </div>
 
 <br/>
 
 <div>
   <label> Number b : </label>
-  <input [(ngModel)]="b" type="text">
+  <input [(ngModel)]="num2" type="text">
 </div>
 
 <br/>
 
 <div>
   <button (click) = "SubmitBtn()"> Submit </button>
+  <button (click) = "ClearBtn()"> Clear </button>
+</div>
+<br/>
+<div>
+  {{hasil}}
 </div>
